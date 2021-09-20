@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>QManager</title>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+		rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="button-container">
+			<button id="download" class="download-button">
+				<span class="material-icons-round">
+					file_download
+				</span>
+			</button>
+			<button id="repo" class="download-button">
+				<span class="material-icons-round">
+					source
+					</span>
+			</button>
+		</div>
+		<img class="preview-img" src="https://i.imgur.com/4Mje9lJ.png" />
+	</body>
+</html>
+
+<script>
+const cfg = {
+	'download_link': 'https://mega.nz/file/YKIzjIoA#pcbloWxyPtrQg3Trv4FtBy1zSUgnNWH0ie8UUk7-Y70',
+	'repo_link': 'https://github.com/johnl28/QManager-CefIntegration'
+}
+
+$( "#download" ).click(function() {
+	window.open(cfg['download_link'], '_blank');
+});
+
+$( "#repo" ).click(function() {
+	window.open(cfg['repo_link'], '_blank');
+});
+</script>
+
+

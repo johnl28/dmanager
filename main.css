@@ -1,0 +1,43 @@
+
+body {
+  background-color: #161718;
+}
+
+.preview-img {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.preview-img:hover {
+  transform: scale(1.1);
+}
+
+.button-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.download-button {
+  float: left;
+  margin: 10px;
+  border: solid 1px rgb(31, 31, 31);
+  color: white;
+  background-color: #0f1011;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+
+.download-button:hover {
+  background-color: rgb(26, 26, 26);
+}
